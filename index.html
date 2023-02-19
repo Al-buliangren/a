@@ -260,7 +260,7 @@ for(var i =  0 ;i<100;i++){
 	}
 }
 //用a查询当前任务名b
-$.get("http://180.76.240.225:8080/task/alltask",{},function(data){
+$.get("https://180.76.240.225:8080/task/alltask",function(data){
 	console.log(data)
 	b = data.taskName
 	info.innerHTML = b
