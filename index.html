@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html>
 <head>
-<title>Sky Forms</title>
+<title>Sky</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
@@ -16,164 +16,52 @@
 <body class="bg-orange">
 <div class="body">			
 
-	<!-- Orange color scheme -->
-	<form action="" class="sky-form">
-		<header id="">表单名字</header>
+	<form action="" class="sky-form" >
+		<header id="info">收集表</header>
 		
 		<fieldset>
 			<section>
-				<label class="label">文本输入</label>
+				<label class="label">提交人员①</label>
 				<label class="input">
-					<input type="text">
-				</label>
-			</section>
-			
-			<section>
-				<label class="label">文件输入</label>
-				<label for="file" class="input input-file">
-					<div class="button"><input type="file" id="file" onchange="this.parentNode.nextSibling.value = this.value">Browse</div><input type="text" readonly="">
-				</label>
-			</section>					
-				
-			<section>
-				<label class="label">下拉选择输入（检索）</label>
-				<label class="input">
-					<input type="text" list="list">
+					<input type="text" list="list" id="name1">
 					<datalist id="list">
-						<option value="Alexandra"></option>
-						<option value="Alice"></option>
-						<option value="Anastasia"></option>
-						<option value="Avelina"></option>
-						<option value="Basilia"></option>
-						<option value="Beatrice"></option>
-						<option value="Cassandra"></option>
-						<option value="Cecil"></option>
-						<option value="Clemencia"></option>
-						<option value="Desiderata"></option>
-						<option value="Dionisia"></option>
-						<option value="Edith"></option>
-						<option value="Eleanora"></option>
-						<option value="Elizabeth"></option>
-						<option value="Emma"></option>
-						<option value="Felicia"></option>
-						<option value="Florence"></option>
-						<option value="Galiana"></option>
-						<option value="Grecia"></option>
-						<option value="Helen"></option>
-						<option value="Helewisa"></option>
-						<option value="Idonea"></option>
-						<option value="Isabel"></option>
-						<option value="Joan"></option>
-						<option value="Juliana"></option>
-						<option value="Karla"></option>
-						<option value="Karyn"></option>
-						<option value="Kate"></option>
-						<option value="Lakisha"></option>
-						<option value="Lana"></option>
-						<option value="Laura"></option>
-						<option value="Leona"></option>
-						<option value="Mandy"></option>
-						<option value="Margaret"></option>
-						<option value="Maria"></option>
-						<option value="Nanacy"></option>
-						<option value="Nicole"></option>
-						<option value="Olga"></option>
-						<option value="Pamela"></option>
-						<option value="Patricia"></option>
-						<option value="Qiana"></option>
-						<option value="Rachel"></option>
-						<option value="Ramona"></option>
-						<option value="Samantha"></option>
-						<option value="Sandra"></option>
-						<option value="Tanya"></option>
-						<option value="Teresa"></option>
-						<option value="Ursula"></option>
-						<option value="Valerie"></option>
-						<option value="Veronica"></option>
-						<option value="Wilma"></option>
-						<option value="Yasmin"></option>
-						<option value="Zelma"></option>
 					</datalist>
 				</label>
-				<div class="note"><strong>Note:</strong> works in Chrome, Firefox, Opera and IE10.</div>
+				<div class="note"><strong>注意:</strong> 索引脚本工作在Chrome,Firefox,Opera和IE10.</div>
 			</section>
-		</fieldset>
-		
-		<fieldset>
+
 			<section>
-				<label class="label">下拉选择输入</label>
-				<label class="select">
-					<select>
-						<option value="0">Choose name</option>
-						<option value="1">Alexandra</option>
-						<option value="2">Alice</option>
-						<option value="3">Anastasia</option>
-						<option value="4">Avelina</option>
-					</select>
-					<i></i>
+				<label class="label">工作时长</label>
+				<label class="input">
+					<input type="text" id="time1">
 				</label>
 			</section>
-		</fieldset>
-		
-		<fieldset>								
-			<section>
-				<label class="label">Textarea resizable</label>
-				<label class="textarea textarea-resizable">
-					<textarea rows="3"></textarea>
-				</label>
-			</section>
-		</fieldset>
-		
-		<fieldset>
-			<section>
-				<label class="label">Inline radios</label>
-				<div class="inline-group">
-					<label class="radio"><input type="radio" name="radio-inline" checked=""><i></i>Alexandra</label>
-					<label class="radio"><input type="radio" name="radio-inline"><i></i>Alice</label>
-					<label class="radio"><input type="radio" name="radio-inline"><i></i>Anastasia</label>
-					<label class="radio"><input type="radio" name="radio-inline"><i></i>Avelina</label>
-					<label class="radio"><input type="radio" name="radio-inline"><i></i>Beatrice</label>
-				</div>
-			</section>
-		</fieldset>
-		
-		<fieldset>
 			
-			<section>
-				<label class="label">Inline checkboxes</label>
-				<div class="inline-group">
-					<label class="checkbox"><input type="checkbox" name="checkbox-inline" checked=""><i></i>Alexandra</label>
-					<label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>Alice</label>
-					<label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>Anastasia</label>
-					<label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>Avelina</label>
-					<label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>Beatrice</label>
-				</div>
-			</section>
 		</fieldset>
+
 		
 		<fieldset>
-			<div class="row">
-				<section class="col col-5">
-					<label class="label">Toggles based on radios</label>
-					<label class="toggle"><input type="radio" name="radio-toggle" checked=""><i></i>Alexandra</label>
-					<label class="toggle"><input type="radio" name="radio-toggle"><i></i>Anastasia</label>
-					<label class="toggle"><input type="radio" name="radio-toggle"><i></i>Avelina</label>
-				</section>
-				
-				<div class="col col-2"></div>
-				
-				<section class="col col-5">				
-					<label class="label">Toggles based on checkboxes</label>
-					<label class="toggle"><input type="checkbox" name="checkbox-toggle" checked=""><i></i>Cassandra</label>
-					<label class="toggle"><input type="checkbox" name="checkbox-toggle"><i></i>Clemencia</label>
-					<label class="toggle"><input type="checkbox" name="checkbox-toggle"><i></i>Desiderata</label>	
-				</section>
-			</div>
+			<section>
+				<label class="label">提交人员②(若无，可不填)</label>
+				<label class="input">
+					<input type="text" list="list" id="name2">
+					<datalist id="list">
+					</datalist>
+				</label>
+				<div class="note"><strong>注意:</strong> 索引脚本工作在Chrome,Firefox,Opera和IE10.</div>
+			</section>
+
+			<section>
+				<label class="label">工作时长(若无，可不填)</label>
+				<label class="input">
+					<input type="text" id="time2">
+				</label>
+			</section>
+			
 		</fieldset>
-		
 		<fieldset>					
 			<section>
-				<label class="label">Ratings with different icons</label>
+				<label class="label">欢迎您的评价</label>
 				<div class="rating">
 					<input type="radio" name="stars-rating" id="stars-rating-5">
 					<label for="stars-rating-5"><i class="fa fa-star"></i></label>
@@ -187,54 +75,10 @@
 					<label for="stars-rating-1"><i class="fa fa-star"></i></label>
 					Stars
 				</div>
-				
-				<div class="rating">
-					<input type="radio" name="trophies-rating" id="trophies-rating-7">
-					<label for="trophies-rating-7"><i class="fa fa-trophy"></i></label>
-					<input type="radio" name="trophies-rating" id="trophies-rating-6">
-					<label for="trophies-rating-6"><i class="fa fa-trophy"></i></label>
-					<input type="radio" name="trophies-rating" id="trophies-rating-5">
-					<label for="trophies-rating-5"><i class="fa fa-trophy"></i></label>
-					<input type="radio" name="trophies-rating" id="trophies-rating-4">
-					<label for="trophies-rating-4"><i class="fa fa-trophy"></i></label>
-					<input type="radio" name="trophies-rating" id="trophies-rating-3">
-					<label for="trophies-rating-3"><i class="fa fa-trophy"></i></label>
-					<input type="radio" name="trophies-rating" id="trophies-rating-2">
-					<label for="trophies-rating-2"><i class="fa fa-trophy"></i></label>
-					<input type="radio" name="trophies-rating" id="trophies-rating-1">
-					<label for="trophies-rating-1"><i class="fa fa-trophy"></i></label>
-					Trophies
-				</div>	
-				
-				<div class="rating">
-					<input type="radio" name="asterisks-rating" id="asterisks-rating-10">
-					<label for="asterisks-rating-10"><i class="fa fa-asterisk"></i></label>
-					<input type="radio" name="asterisks-rating" id="asterisks-rating-9">
-					<label for="asterisks-rating-9"><i class="fa fa-asterisk"></i></label>
-					<input type="radio" name="asterisks-rating" id="asterisks-rating-8">
-					<label for="asterisks-rating-8"><i class="fa fa-asterisk"></i></label>
-					<input type="radio" name="asterisks-rating" id="asterisks-rating-7">
-					<label for="asterisks-rating-7"><i class="fa fa-asterisk"></i></label>
-					<input type="radio" name="asterisks-rating" id="asterisks-rating-6">
-					<label for="asterisks-rating-6"><i class="fa fa-asterisk"></i></label>
-					<input type="radio" name="asterisks-rating" id="asterisks-rating-5">
-					<label for="asterisks-rating-5"><i class="fa fa-asterisk"></i></label>
-					<input type="radio" name="asterisks-rating" id="asterisks-rating-4">
-					<label for="asterisks-rating-4"><i class="fa fa-asterisk"></i></label>
-					<input type="radio" name="asterisks-rating" id="asterisks-rating-3">
-					<label for="asterisks-rating-3"><i class="fa fa-asterisk"></i></label>
-					<input type="radio" name="asterisks-rating" id="asterisks-rating-2">
-					<label for="asterisks-rating-2"><i class="fa fa-asterisk"></i></label>
-					<input type="radio" name="asterisks-rating" id="asterisks-rating-1">
-					<label for="asterisks-rating-1"><i class="fa fa-asterisk"></i></label>
-					Asterisks
-				</div>
-				<div class="note"><strong>Note:</strong> you can use more than 300 vector icons for rating.</div>
 			</section>
 		</fieldset>
-		
 		<footer>
-			<button id="btn" type="submit" class="button">Submit</button>
+			<b id="btn" type="submit" class="button">提交</b>
 		</footer>
 	</form>
 	<!--/ Orange color scheme -->			
@@ -249,36 +93,59 @@
 <script src="static/js/jquery.js" type="text/javascript" charset="UTF-8"></script>
 <script type="text/javascript">
 
-var a = 0
+//获取任务ID
+var a = ""
 var b = ""
 var aherf = window.location.href;
 for(var i =  0 ;i<100;i++){
 	if(aherf[i] == "i"){
 		if(aherf[i+1] == "d"){
-			a = aherf[i+3] + aherf[i+4] + aherf[i+5] + aherf[i+6] + aherf[i+7];
+			for(var n = 3;n<10;n++){
+				if(aherf[i+n] != undefined)
+				a = a + aherf[i+n];
+			}
 		}
 	}
 }
-//用a查询当前任务名b
-$.get("https://180.76.240.225:8080/task/alltask",function(data){
-	console.log(data)
-	b = data.taskName
-	info.innerHTML = b
+
+//显示任务
+ahf = "http://180.76.240.225:8080/task/" + a;
+$.get(ahf,function(result){
+	b = result.data.taskName
+	info.innerHTML = b+"收集表"
 });
-/*
-const xhr = new XMLHttpRequest();
-xhr.open('GET','http://180.76.240.225:8080/task/alltask');
-xhr.setRequestHeader('Content-Type','multipart/form-data');
-xhr.send();
-xhr.onreadystatechange = function(data){
-	console.log(data)
-}*/
+
+//获取姓名
+$.get("http://180.76.240.225:8080/workers/allworkers",function(result){
+	b = result.data
+	for(var i = 0;i<b.length;i++){
+		var op = "<option>" + b[i].workerName  + "</option>"
+		$(list).append(op)
+	}
+});
+
+//点击提交
 btn.onclick = function(){
-    username = jQuery("#name").val();
-	usertime = jQuery("#time").val();
-	$.get("http://180.76.240.225:8080/task/1",{sendid:a,sendusername:username,sendusertime:usertime},function(data){
-        alert("提交成功");
-    });
+	if(a>0){
+		var result = confirm("请确认当前任务为"+ b+",如不正确请重新扫码或者联系管理员");
+		if(result == true){
+			username = jQuery("#name1").val();
+			usertime = jQuery("#time1").val();
+			$.ajax({
+				type:"post",
+				url:"http://180.76.240.225:8080/execute/add",
+				data:JSON.stringify({
+					taskId:a,
+					executeWorker:username,
+					executeTime:usertime
+				}),
+				contentType:"application/json",
+				success:function(result){alert("提交成功,请勿重复提交！");location.reload();}
+			});
+		}
+	}else{
+		alert("请通过二维码扫码填写");
+	}
 }
 </script>
 </html>
